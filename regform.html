@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regform</title>
+    <style>
+          body{
+            background-color: #00DBDE;
+            background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+          }
+          input:required{
+            border: 2px solid purple;
+          }
+          input :optional{
+            border:3px dashed #1a041b;
+          }
+          
+
+input[readonly]{
+   background-color:rgb(194, 225, 14);
+   color: black;
+   font-style: italic;
+   border-radius: 15px;
+}
+
+fieldset{
+   width: 400px;
+   border: 5px solid black;
+   border-radius: 30px;
+}
+select{
+   background-color: rgb(20, 13, 207);
+   border-radius: 50px;
+   width:150px;
+   font color: bl;
+   color:bisque;
+   cursor: pointer;
+}
+input[type="radio"]:checked{
+   height:15px;
+   width:15px;
+}
+input[type="radio"]:checked+label{
+   color:red;
+   font-size: 20px;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+ </style>
+</head>
+<h1>Course Registeration Form</h1>
+<body>
+    <form action="">
+      <fieldset>
+         <legend >Personal Details</legend>
+       <table>
+          <tr>
+             <td><label for="">Name</label></td>
+             <td><input type="text" placeholder=" eg.Ram" size="=15" maxlength="20" required/> <br>
+             </td>
+          </tr>
+        <tr>  
+            <td><label for="">Surname</label></td>
+            <td><input type="text" placeholder="eg.R" optional/> <br></td>
+
+        </tr>
+        <tr>
+           <td><label>Mobile Number</label></td>
+           <td> <input for="tell" placeholder="eg.888-777-7747" required/> <br> </td>
+
+        </tr>
+        <tr>
+           <td><label for="">Email required</label></td>
+           <td> <input type="email" placeholder="ramram333@gmail.com" required/> <br></td>
+       </tr>
+       <tr>
+          <td><label for="">Password</label> </label></td>
+          <td><input type="password"> <br></td>
+       </tr>
+       <tr>  
+           <td><label for="">Confirm Password </label></td>
+           <td><input type="Confirm password"required> <br></td>
+
+       </tr>
+       <tr>
+            <td><label for="">DOB</label></td>
+            <td><input type="date"> <br>
+            </td>
+
+       </tr>
+       <tr>
+        <td><label for="">Gender</label></td>
+        <td><input type="radio" name="gender" value="M"/> <label>Male</label>
+            <input type="radio" name="gender" value="F"/> <label>Female</label>
+            <input type="radio" name="gender" value="C"/> <label>Others </label> <br>
+            </td>
+       </tr>
+       <tr>
+          <td><label for="">Select country</label>
+          </td>
+          <td><select>
+            <option value="">INDIA</option>
+            <option value="">UK</option>
+            <option value="">USA</option>
+          </select> <br></td>
+
+       </tr>
+         <tr>
+            <td> <label for="">Upload image</label></td>
+            <td><input type="file"/> <br>
+            </td>
+
+         </tr>
+         <tr><td><input type="reset"/></td></tr>
+         </table>
+         </fieldset>
+      <fieldset>
+         <legend>Course Details</legend>
+        <label>Select course</label></td><select>
+            <option value="">Python full stack</option>
+            <option value="">Java full stack</option> </select> <br>
+            <label for="">Delivery Mode</label>
+               <td><input type="radio"  name="on" value="on"/> <label>Online</label>
+               <input type="radio" name="on" value=on/><label> Offline</label><br>
+               <label>INSTITIE NAME:</label>
+               <input type="text" value="TAP ACADEMY" readonly/><br>
+      <label for="">CommentS</label><br>
+     <textarea rows="4" col="40"></textarea><br>
+    <input type="Submit">
+   </fieldset></form>
+</body>
+</html>
